@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character set and viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Title of the webpage -->
+  <title>Foodway</title>
+</head>
+<body>
+  <!-- Main container -->
+  <div class="container">
+    <!-- Navigation bar -->
+    <nav>
+      <!-- Logo with a food-related part -->
+      <div class="logo"><span class="food-part">Food</span>way</div>
+      
+      <!-- Navbar links -->
+      <div class="navbar-links">
+        <!-- Close button for mobile navigation -->
+        <span class="close-btn" onclick="closeNavbar()">×</span>
+
+        <!-- Navigation links -->
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <!-- Burger menu icon for mobile navigation -->
+      <div class="burger-menu">&#9776;</div>
+    </nav>
+
+    <!-- Main content section -->
+    <section class="main">
+      <!-- Information about the website -->
+      <div class="info">
+        <!-- Dynamic typing text -->
+        <h1 id="typing-text"></h1>
+        <!-- Description of the website -->
+        <p>Your favorite cuisines, delivered to your doorstep.</p>
+      </div>
+      
+      <!-- Image related to food delivery -->
+      <div class="delievry-image">
+        <img src="/assets/delivery.png" alt="Food Delivery Image" class="delivery-image" width="550" />
+      </div>
+    </section>
+
+    <!-- Gallery section with some of the best cuisines -->
+    <section class="gallery-container">
+      <h1>Some of our Best Cuisines</h1>
+      <br />
+      <!-- Gallery track for sliding images -->
+      <div class="gallery-track" id="galleryTrack">
+        <!-- Individual gallery items with cuisine images -->
+        <div class="gallery-item">
+          <img src="/assets/food1.jpg" alt="Image 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="/assets/food2.png" alt="Image 2" />
+        </div>
+        <div class="gallery-item">
+          <img src="/assets/food3.jpg" alt="Image 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="/assets/food4.png" alt="Image 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="/assets/food5.png" alt="Image 3" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section with about, contact, and social links -->
+    <footer class="footer">
+      <!-- About Us section -->
+      <div class="footer-section about">
+        <h3>About Us</h3>
+        <p>
+          "Foodway is your culinary gateway to a world of exquisite flavors.
+          We take pride in delivering a diverse range of delectable dishes,
+          sourced from top-notch restaurants to your doorstep. With a passion
+          for quality and convenience, Foodway ensures a delightful dining
+          experience, making every meal a celebration of taste and
+          convenience."
+        </p>
+      </div>
+
+      <!-- Contact Us section -->
+      <div class="footer-section contact">
+        <h3>Contact</h3>
+        <p>Email: info@example.com</p>
+        <p>Phone: +123 456 789</p>
+      </div>
+
+      <!-- Social Media section -->
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        <a href="#" target="_blank">Facebook</a>
+        <a href="#" target="_blank">Twitter</a>
+        <a href="#" target="_blank">Instagram</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts for jQuery and custom JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
